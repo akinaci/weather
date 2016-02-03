@@ -7,7 +7,10 @@ $(function() {
 
 
     var markup = "Current Conditions: " + data.currently.summary + " with a temperature of " + data.currently.temperature + " degrees. "
-    + "The Forecast: " + data.daily.summary + "Tomorrow: " + data.daily.data[1].summary + " High temperature of " + data.daily.data[1].temperatureMax + " degrees.";
+    + "The Forecast: " + data.daily.summary
+    + " Today: " + data.daily.data[0].summary + " High temperature of " + data.daily.data[0].temperatureMax + " degrees."
+    + " Tomorrow: " + data.daily.data[1].summary + " High temperature of " + data.daily.data[1].temperatureMax + " degrees."
+    + " The Next Day: " + data.daily.data[2].summary + " High temperature of " + data.daily.data[2].temperatureMax + " degrees.";
 
 
 
