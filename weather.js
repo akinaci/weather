@@ -6,7 +6,7 @@ $(function() {
     // Don't change any other code in this file. You will be sad.
 
 
-    var markup = "Current Conditions: " + data.currently.summary;
+    var markup = "Current Conditions: " + data.currently.summary + " with a temperature of " + data.currently.temperature + " degrees.";
 
 
 
